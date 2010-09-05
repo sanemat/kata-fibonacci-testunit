@@ -4,7 +4,7 @@ require 'fibonacci'
 require 'test/unit'
 
 class TC_Fibonacci < Test::Unit::TestCase
-  def test_fibonacci_1
+  def test_fibonacci_0
     fib = Fibonacci.new
     assert_equal(0, fib.number(0), '0であること')
   end
