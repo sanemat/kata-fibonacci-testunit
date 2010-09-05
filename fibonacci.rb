@@ -1,7 +1,9 @@
 # coding: utf-8
 class Fibonacci
   def number(input)
-    0
+    if input == 0 then 0
+    else 1
+    end
   end
 end
 
