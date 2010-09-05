@@ -4,12 +4,13 @@ require 'fibonacci'
 require 'test/unit'
 
 class TC_Fibonacci < Test::Unit::TestCase
+  def setup
+    @fib = Fibonacci.new
+  end
   def test_fibonacci_0
-    fib = Fibonacci.new
-    assert_equal(0, fib.number(0), '0であること')
+    assert_equal(0, @fib.number(0), '0であること')
   end
   def test_fibonacci_1
-    fib = Fibonacci.new
-    assert_equal(1, fib.number(1), '1であること')
+    assert_equal(1, @fib.number(1), '1であること')
   end
 end
