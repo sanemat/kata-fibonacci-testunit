@@ -8,9 +8,15 @@ class TC_Fibonacci < Test::Unit::TestCase
     @fib = Fibonacci.new
   end
   def test_fibonacci_0
-    assert_equal(0, @fib.number(0), '0であること')
+    assert_equal(0, @fib.number(0), '0のとき0であること')
   end
   def test_fibonacci_1
-    assert_equal(1, @fib.number(1), '1であること')
+    assert_equal(1, @fib.number(1), '1のとき1であること')
+  end
+  def test_fibonacci_2
+    assert_equal(1, @fib.number(2), '2のとき1であること')
+  end
+  def test_fibonacci_3
+    assert_equal(2, @fib.number(3), '3のとき2であること')
   end
 end
